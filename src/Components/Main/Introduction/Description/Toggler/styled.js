@@ -4,6 +4,18 @@ export const Container = styled.div`
   text-transform: uppercase;
   text-align: center;
   margin-left: auto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 12px;
+  position: static;
+  width: 99px;
+  height: 16px;
+  left: 0px;
+  top: 5px;
 `;
 export const Wrapper = styled.div`
   position: relative;

@@ -1,7 +1,7 @@
 import { Content } from './styled';
 
 const Title = () => {
-  return <Content>Miłosz Zajaczkowski</Content>;
+  return <Content>Miłosz Zajączkowski</Content>;
 };
 
 export default Title;
