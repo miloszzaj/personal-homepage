@@ -8,4 +8,5 @@ export const Content = styled.h1`
   font-size: 38px;
   line-height: 46px;
   letter-spacing: 0.05em;
+  color: ${({ theme }) => theme.text.primary};
 `;

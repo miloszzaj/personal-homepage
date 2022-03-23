@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 html {
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
-  background-color: ${({ theme }) => theme.color.mercury};
+  background-color: ${({ theme }) => theme.background.primary};
 }
 
 *,

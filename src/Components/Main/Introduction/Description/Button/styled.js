@@ -35,5 +35,5 @@ export const Text = styled.div`
   order: 1;
   flex-grow: 0;
   margin: 0px 16px;
-  color: ${({ theme }) => theme.color.quaternary};
+  color: ${({ theme }) => theme.text.tertiary};
 `;
