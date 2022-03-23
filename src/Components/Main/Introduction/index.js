@@ -1,12 +1,14 @@
 import Description from './Description';
-import { ReactComponent as PhoneIcon } from './Image/phone.svg';
-import { Wrapper } from './styled';
+import Toggler from './Description/Toggler';
+import photo from './Image/photo.jpeg';
+import { Image, Wrapper } from './styled';
 
 const Introduction = () => {
   return (
     <Wrapper>
-      <PhoneIcon />
+      <Image src={photo} />
       <Description />
+      <Toggler label='dark mode' />
     </Wrapper>
   );
 };

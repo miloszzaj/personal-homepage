@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background-color: red;
-  max-width: 800px;
+  max-width: 1216px;
   margin: 115px auto;
 `;
