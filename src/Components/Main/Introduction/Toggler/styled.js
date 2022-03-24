@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  color: ${({ theme }) => theme.text.primary};
   text-transform: uppercase;
   text-align: center;
   margin-left: auto;

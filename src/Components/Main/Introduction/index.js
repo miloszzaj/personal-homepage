@@ -1,5 +1,5 @@
 import Description from './Description';
-import Toggler from './Description/Toggler';
+import Toggler from './Toggler';
 import photo from './Image/photo.jpeg';
 import { Image, Wrapper } from './styled';
 
