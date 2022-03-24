@@ -1,6 +1,7 @@
 import Section from '../Section';
 import { Bullet, ListItem, ListWrapper } from '../Section/styled';
 import Introduction from './Introduction';
+import Portfolio from './Portfolio';
 import { Wrapper } from './styled';
 
 const Main = () => {
@@ -24,22 +25,23 @@ const Main = () => {
       <Introduction />
       <Section
         title='My skillset includes'
-        content={skillListArray.map(el => (
+        content={skillListArray.map(skill => (
           <ListWrapper>
             <Bullet />
-            <ListItem>{el}</ListItem>
+            <ListItem>{skill}</ListItem>
           </ListWrapper>
         ))}
       />
       <Section
         title='What I want to learn next'
-        content={learnListArray.map(el => (
+        content={learnListArray.map(skill => (
           <ListWrapper>
             <Bullet />
-            <ListItem>{el}</ListItem>
+            <ListItem>{skill}</ListItem>
           </ListWrapper>
         ))}
       />
+      <Portfolio />
     </Wrapper>
   );
 };

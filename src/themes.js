@@ -6,6 +6,7 @@ const colorNames = {
   mischka: 'D1D5DB',
   staleGray: '#6E7E91',
   dodgerBlue: '#2188FF',
+  selago: '#E3E3F7',
 };
 
 export const lightTheme = {
@@ -16,7 +17,7 @@ export const lightTheme = {
     quaternary: colorNames.white,
   },
   background: {
-    primary: colorNames.mercury,
+    primary: colorNames.salago,
     secondary: colorNames.white,
   },
 
