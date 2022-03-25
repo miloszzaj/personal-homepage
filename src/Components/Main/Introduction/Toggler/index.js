@@ -9,13 +9,12 @@ const Toggler = ({ label }) => {
     <Container>
       {label}{' '}
       <Wrapper>
-        <Input onChange={() => themeToggler()} type='checkbox' name={label} id={label} />
+        <Input onChange={themeToggler} type='checkbox' name={label} id={label} />
         <Label className='label' htmlFor={label}>
           <Inner className='inner' />
           <Switch className='switch' />
         </Label>
       </Wrapper>
-      <button onClick={() => themeToggler()}>zmień</button>
     </Container>
   );
 };

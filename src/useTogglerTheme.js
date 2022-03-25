@@ -5,5 +5,6 @@ export const useThemeToggler = () => {
   const themeToggler = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light');
   };
+  console.log(theme);
   return { theme, themeToggler };
 };
