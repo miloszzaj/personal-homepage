@@ -31,16 +31,16 @@ export const ListWrapper = styled.div`
   flex-direction: row;
   align-items: center;
 `;
-export const Bullet = styled.div`
-  background-color: ${({ theme }) => theme.color.secondary};
-  border-radius: 50%;
-  width: 9px;
-  height: 9px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 24px 0px;
-`;
+// export const Bullet = styled.div`
+//   background-color: ${({ theme }) => theme.color.secondary};
+//   border-radius: 50%;
+//   width: 9px;
+//   height: 9px;
+//   flex: none;
+//   order: 0;
+//   flex-grow: 0;
+//   margin: 24px 0px;
+// `;
 export const ListItem = styled.li`
   color: ${({ theme }) => theme.text.secondary};
   font-style: normal;
@@ -49,10 +49,13 @@ export const ListItem = styled.li`
   line-height: 140%;
   letter-spacing: 0.05em;
   vertical-align: middle;
-  /* Inside auto layout */
-
   flex: none;
   order: 1;
   flex-grow: 0;
   margin: 8px 10px;
+  &::before {
+    content: '• ';
+    font-size: 30px;
+    color: ${({ theme }) => theme.color.secondary};
+  }
 `;
