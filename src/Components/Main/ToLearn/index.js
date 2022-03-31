@@ -1,4 +1,4 @@
-import { Bullet, ListItem, ListWrapper } from '../../Section/styled';
+import { ListItem, ListWrapper } from '../../Section/styled';
 
 const learnListArray = ['React Context', 'Node.js', ' Cypress', ' Unit testing', 'TypeScript'];
 
