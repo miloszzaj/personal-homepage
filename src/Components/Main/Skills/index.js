@@ -1,5 +1,5 @@
 import Section from '../../Section';
-import { Bullet, ListItem, ListWrapper } from '../../Section/styled';
+import { ListItem, ListWrapper } from '../../Section/styled';
 const skillListArray = [
   'HTML',
   'Responsive Web Design',
