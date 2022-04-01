@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 export const Wrapper = styled.div`
-  width: 195px;
   margin: auto;
 `;
 export const Heading = styled.div`
@@ -15,7 +14,7 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.h1`
-  ${({ theme }) => theme.text.primary};
+  color: ${({ theme }) => theme.text.primary};
   width: 143px;
   height: 36px;
   margin: 13px 0 8px 0;
@@ -34,4 +33,19 @@ export const Caption = styled.div`
   font-size: 20px;
   line-height: 140%;
   letter-spacing: 0.05em;
+`;
+
+export const Tiles = styled.div`
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+`;
+
+export const Tile = styled.div`
+  width: 592px;
+  height: 322px;
+  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+  border: 6px solid rgba(209, 213, 218, 0.3);
+  border-radius: 4px;
+  background-color: ${({ theme }) => theme.background.secondary};
 `;

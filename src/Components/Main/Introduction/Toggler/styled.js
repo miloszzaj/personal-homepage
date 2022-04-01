@@ -25,7 +25,13 @@ export const Wrapper = styled.div`
   text-align: left;
   top: 8px;
 `;
-
+export const Label = styled.label`
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 0 solid #bbb;
+  border-radius: 20px;
+`;
 export const Input = styled.input`
   display: none;
   &:checked + .label .inner {
@@ -34,14 +40,6 @@ export const Input = styled.input`
   &:checked + .label .switch {
     right: 0px;
   }
-`;
-
-export const Label = styled.label`
-  display: block;
-  overflow: hidden;
-  cursor: pointer;
-  border: 0 solid #bbb;
-  border-radius: 20px;
 `;
 
 export const Inner = styled.span`

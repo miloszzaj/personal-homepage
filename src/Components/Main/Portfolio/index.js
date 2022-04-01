@@ -1,4 +1,4 @@
-import { Caption, Heading, Image, Title, Wrapper } from './styled';
+import { Caption, Heading, Image, Tile, Tiles, Title, Wrapper } from './styled';
 import gitHubImage from '../../images/Fill-51 (1).png';
 
 const Portfolio = () => {
@@ -9,6 +9,12 @@ const Portfolio = () => {
         <Title>Portfolio</Title>
         <Caption>My recent projects</Caption>
       </Heading>
+      <Tiles>
+        <Tile />
+        <Tile />
+        <Tile />
+        <Tile />
+      </Tiles>
     </Wrapper>
   );
 };
