@@ -39,13 +39,6 @@ export const Tiles = styled.div`
   margin-top: 24px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-`;
-
-export const TileContainer = styled.div`
-  width: 592px;
-  height: 322px;
-  box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
-  border: 6px solid rgba(209, 213, 218, 0.3);
-  border-radius: 4px;
-  background-color: ${({ theme }) => theme.background.secondary};
+  column-gap: 32px;
+  row-gap: 32px;
 `;

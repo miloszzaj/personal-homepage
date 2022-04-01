@@ -2,33 +2,7 @@ import { Caption, Heading, Image, Tiles, Title, Wrapper } from './styled';
 import gitHubImage from '../../../assets/images/git.png';
 import Tile from './Tile';
 import { useState } from 'react';
-
-const data = [
-  {
-    title: 'React cenjc cenrci ',
-    content: 'cnei enciwe c wnicn ',
-    demo: 'google.com',
-    code: 'wkic mc eroc3e',
-  },
-  {
-    title: 'React cenjc c476enrcijujyuj ',
-    content: 'cnei enciwe c wnicn ',
-    demo: 'google.com',
-    code: 'wkic mc eroc3e',
-  },
-  {
-    title: 'React cenjc cenrcijyuj645y4546yuj ',
-    content: 'cnei enciwe c wnicn ',
-    demo: 'google.com',
-    code: 'wkic mc eroc3e',
-  },
-  {
-    title: 'React cenjc cen4y6767rcijy ',
-    content: 'cnei enciwe c wnicn ',
-    demo: 'google.com',
-    code: 'wkic mc eroc3e',
-  },
-];
+import { projects } from '../../../assets/data/projects';
 
 const Portfolio = () => {
   const [showAll, setShowAll] = useState(true);
@@ -47,7 +21,7 @@ const Portfolio = () => {
       </Heading>
       <Tiles>
         {showAll
-          ? data.map(({ title, content, demo, code }) => (
+          ? projects.map(({ title, content, demo, code }) => (
               <Tile
                 onClick={() => handleOnClick(title)}
                 key={title}
@@ -57,7 +31,7 @@ const Portfolio = () => {
                 code={code}
               />
             ))
-          : data.map(item => {
+          : projects.map(item => {
               if (item.title === tileIndex) {
                 return (
                   <Tile

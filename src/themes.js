@@ -29,6 +29,7 @@ export const lightTheme = {
     primary: colorNames.mineShaft,
     secondary: colorNames.staleGray,
     tertiary: colorNames.white,
+    quaternary: colorNames.scienceBlue,
   },
 };
 

@@ -1,12 +1,18 @@
-import { TileContainer } from './styled';
+import { Code, Content, Demo, Link, TileContainer, Title } from './styled';
 
 const Tile = ({ title, content, demo, code, onClick }) => {
   return (
     <TileContainer onClick={onClick}>
-      <h1>{title}</h1>
-      <div>{content}</div>
-      <div>{demo}</div>
-      <div>{code}</div>
+      <Title>{title}</Title>
+      <Content>{content}</Content>
+      <Demo>
+        Demo:
+        <Link href='{demo}'> {demo}</Link>
+      </Demo>
+      <Code>
+        Code:
+        <Link href='{code}'> {code}</Link>
+      </Code>
     </TileContainer>
   );
 };
