@@ -1,5 +1,5 @@
 import { Content, Text } from './styled';
-import mailIcon from '../../Image/mail.svg';
+import mailIcon from '../../../../../assets/images/mail.svg';
 
 const Button = () => {
   return (

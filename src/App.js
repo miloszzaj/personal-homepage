@@ -1,5 +1,5 @@
 import { ThemeProvider } from 'styled-components';
-import { useThemeToggler } from './useTogglerTheme';
+import { useThemeToggler } from '../src/assets/features/useTogglerTheme';
 import { GlobalStyle } from './GlobalStyle';
 
 import { lightTheme, darkTheme } from './themes';

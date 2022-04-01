@@ -1,6 +1,6 @@
 import Description from './Description';
 import Toggler from './Toggler';
-import photo from './Image/photo.jpeg';
+import photo from '../../../assets/images/photo.jpeg';
 import { Image, Wrapper } from './styled';
 
 const Introduction = () => {

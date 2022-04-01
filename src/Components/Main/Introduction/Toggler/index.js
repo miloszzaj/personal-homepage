@@ -1,5 +1,5 @@
 import { Container, Inner, Input, Label, Switch, Wrapper } from './styled';
-import { useThemeToggler } from '../../../../useTogglerTheme';
+import { useThemeToggler } from '../../../../assets/features/useTogglerTheme';
 
 const Toggler = ({ label }) => {
   const { theme, themeToggler } = useThemeToggler();

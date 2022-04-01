@@ -4,7 +4,6 @@ const learnListArray = ['React Context', 'Node.js', ' Cypress', ' Unit testing',
 
 const content = learnListArray.map(skill => (
   <ListWrapper key={skill}>
-    {/* <Bullet /> */}
     <ListItem>{skill}</ListItem>
   </ListWrapper>
 ));

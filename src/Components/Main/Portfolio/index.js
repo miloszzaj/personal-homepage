@@ -1,5 +1,5 @@
 import { Caption, Heading, Image, Tiles, Title, Wrapper } from './styled';
-import gitHubImage from '../../images/Fill-51 (1).png';
+import gitHubImage from '../../../assets/images/git.png';
 import Tile from './Tile';
 import { useState } from 'react';
 
