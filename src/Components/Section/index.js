@@ -1,11 +1,11 @@
 import { Divider, SkillsList, Title, Wrapper } from './styled';
 
-const Section = ({ title, content }) => {
+const Section = ({ title, children }) => {
   return (
     <Wrapper>
       <Title>{title}</Title>
       <Divider />
-      <SkillsList>{content}</SkillsList>
+      <SkillsList>{children}</SkillsList>
     </Wrapper>
   );
 };
