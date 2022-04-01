@@ -41,7 +41,7 @@ export const Tiles = styled.div`
   grid-template-columns: 1fr 1fr;
 `;
 
-export const Tile = styled.div`
+export const TileContainer = styled.div`
   width: 592px;
   height: 322px;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);

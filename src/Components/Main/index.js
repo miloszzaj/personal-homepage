@@ -10,7 +10,9 @@ const Main = () => {
     <Wrapper>
       <Introduction />
       <Skills />
-      <Section title='My skillset includes' content={<ToLearn />} />
+      <Section title='My skillset includes'>
+        <ToLearn />
+      </Section>
       <Portfolio />
     </Wrapper>
   );
