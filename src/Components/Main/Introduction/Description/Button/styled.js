@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Content = styled.button`
+export const Content = styled.a`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,10 +11,9 @@ export const Content = styled.button`
   padding: 12px 16px;
   margin-top: 20px;
   border: 1px solid rgba(209, 213, 218, 0.3);
-
-  box-sizing: border-box;
   border-radius: 4px;
   background-color: ${({ theme }) => theme.button.background};
+  text-decoration: none;
 `;
 
 export const Text = styled.div`
