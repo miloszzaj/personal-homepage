@@ -9,8 +9,10 @@ const Main = () => {
   return (
     <Wrapper>
       <Introduction />
-      <Skills />
       <Section title='My skillset includes'>
+        <Skills />
+      </Section>
+      <Section title='What I want to learn next'>
         <ToLearn />
       </Section>
       <Portfolio />

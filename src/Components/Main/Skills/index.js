@@ -1,4 +1,3 @@
-import Section from '../../Section';
 import { ListItem, ListWrapper } from '../../Section/styled';
 const skillListArray = [
   'HTML',
@@ -13,18 +12,12 @@ const skillListArray = [
   'Redux (Toolkit)',
   'React Hooks',
 ];
-const Skills = () => {
-  return (
-    <Section
-      title='What I want to learn next'
-      content={skillListArray.map(skill => (
-        <ListWrapper>
-          {/* <Bullet /> */}
-          <ListItem>{skill}</ListItem>
-        </ListWrapper>
-      ))}
-    />
-  );
+const Skills = ({ title }) => {
+  return skillListArray.map(skill => (
+    <ListWrapper key={skill}>
+      <ListItem>{skill}</ListItem>
+    </ListWrapper>
+  ));
 };
 
 export default Skills;
