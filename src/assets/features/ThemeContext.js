@@ -12,7 +12,7 @@ export function useUpdateTheme() {
   return useContext(ThemeUpdateContext);
 }
 
-export const DataContextProvider = ({ children }) => {
+export const ThemeContextProvider = ({ children }) => {
   const [themeContext, setTheme] = useState('light');
   const themeToggler = () => {
     themeContext === 'light' ? setTheme('dark') : setTheme('light');
