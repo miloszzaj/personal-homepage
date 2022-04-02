@@ -3,6 +3,7 @@ import gitHubImage from '../../../assets/images/git.png';
 import Tile from './Tile';
 import { useState } from 'react';
 import { projects } from '../../../assets/data/projects';
+import TileBig from './TileBig';
 
 const Portfolio = () => {
   const [showAll, setShowAll] = useState(true);
@@ -34,10 +35,10 @@ const Portfolio = () => {
           : projects.map(item => {
               if (item.title === tileIndex) {
                 return (
-                  <Tile
+                  <TileBig
                     key={item.title}
                     title={item.title}
-                    content={item.content}
+                    content={item.contentLong}
                     demo={item.demo}
                     code={item.code}
                   />
