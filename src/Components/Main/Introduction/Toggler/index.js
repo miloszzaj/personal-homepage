@@ -1,13 +1,13 @@
 import { Container, Inner, Input, Label, Switch, Wrapper } from './styled';
-import { useThemeToggler } from '../../../../assets/features/useTogglerTheme';
+import { useUpdateTheme, useTheme } from '../../../../assets/features/ThemeContext';
 
 const Toggler = ({ label }) => {
-  const { theme, themeToggler } = useThemeToggler();
-  console.log(theme);
+  const themeToggler = useUpdateTheme();
+  const themeContext = useTheme();
 
   return (
     <Container>
-      {label}{' '}
+      {label} <div>{JSON.stringify(themeContext)}</div>
       <Wrapper>
         <Input onChange={themeToggler} type='checkbox' name={label} id={label} />
         <Label className='label' htmlFor={label}>

@@ -1,20 +1,21 @@
 import { ThemeProvider } from 'styled-components';
-import { useThemeToggler } from '../src/assets/features/useTogglerTheme';
-import { GlobalStyle } from './GlobalStyle';
-
-import { lightTheme, darkTheme } from './themes';
-
 import Main from './Components/Main';
 
+import { GlobalStyle } from './GlobalStyle';
+import { lightTheme, darkTheme } from './themes';
+import { DataContextProvider, useTheme } from './assets/features/ThemeContext';
+
 function App() {
-  const { theme } = useThemeToggler();
-  console.log('App', theme);
+  const themeContext = useTheme();
+  console.log(themeContext);
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
-      <GlobalStyle />
-      <Main />
-    </ThemeProvider>
+    <DataContextProvider>
+      <ThemeProvider theme={themeContext === 'light' ? lightTheme : darkTheme}>
+        <GlobalStyle />
+        <Main />
+      </ThemeProvider>
+    </DataContextProvider>
   );
 }
 
