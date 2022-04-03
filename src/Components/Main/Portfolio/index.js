@@ -54,6 +54,7 @@ const Portfolio = () => {
                       key={item.title}
                       title={item.title}
                       content={item.contentLong}
+                      technologies={item.technologies}
                       demo={item.demo}
                       code={item.code}
                     />

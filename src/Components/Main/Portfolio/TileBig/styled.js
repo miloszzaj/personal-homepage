@@ -35,8 +35,18 @@ export const Link = styled.a`
 `;
 
 export const Button = styled.button`
+  display: block;
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  background-color: ${({ theme }) => theme.background.secondary};
+  background-color: ${({ theme }) => theme.button.background};
+  color: ${({ theme }) => theme.text.tertiary};
+
+  padding: 12px 16px;
+  width: 154px;
+  height: 49px;
+  padding: 12px 16px;
+  margin: 40px auto;
+  border: 1px solid rgba(209, 213, 218, 0.3);
+  border-radius: 4px;
 `;
