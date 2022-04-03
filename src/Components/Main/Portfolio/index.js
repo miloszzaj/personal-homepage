@@ -4,6 +4,8 @@ import Tile from './Tile';
 import { useState } from 'react';
 import { projects } from '../../../assets/data/projects';
 import TileBig from './TileBig';
+import TileLoading from './TileLoading';
+import { useEffect } from 'react';
 
 const Portfolio = () => {
   const [showAll, setShowAll] = useState(true);
@@ -13,6 +15,15 @@ const Portfolio = () => {
     setTileIndex(index);
   };
 
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    if (loading) {
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+    }
+  });
+
   return (
     <Wrapper>
       <Heading>
@@ -20,32 +31,36 @@ const Portfolio = () => {
         <Title>Portfolio</Title>
         <Caption>My recent projects</Caption>
       </Heading>
-      <Tiles>
-        {showAll
-          ? projects.map(({ title, content, demo, code }) => (
-              <Tile
-                onClick={() => handleOnClick(title)}
-                key={title}
-                title={title}
-                content={content}
-                demo={demo}
-                code={code}
-              />
-            ))
-          : projects.map(item => {
-              if (item.title === tileIndex) {
-                return (
-                  <TileBig
-                    key={item.title}
-                    title={item.title}
-                    content={item.contentLong}
-                    demo={item.demo}
-                    code={item.code}
-                  />
-                );
-              }
-            })}
-      </Tiles>
+      {loading ? (
+        <TileLoading />
+      ) : (
+        <Tiles>
+          {showAll
+            ? projects.map(({ title, content, demo, code }) => (
+                <Tile
+                  onClick={() => handleOnClick(title)}
+                  key={title}
+                  title={title}
+                  content={content}
+                  demo={demo}
+                  code={code}
+                />
+              ))
+            : projects.map(item => {
+                if (item.title === tileIndex) {
+                  return (
+                    <TileBig
+                      key={item.title}
+                      title={item.title}
+                      content={item.contentLong}
+                      demo={item.demo}
+                      code={item.code}
+                    />
+                  );
+                }
+              })}
+        </Tiles>
+      )}
     </Wrapper>
   );
 };
