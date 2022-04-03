@@ -1,6 +1,6 @@
-import { Code, Content, Demo, Link, TileContainer, Title } from './styled';
+import { Button, Code, Content, Demo, Link, TileContainer, Title } from './styled';
 
-const TileBig = ({ title, content, demo, code, onClick }) => {
+const TileBig = ({ title, content, demo, code, onClick, setShowAll }) => {
   return (
     <TileContainer onClick={onClick}>
       <Title>{title}</Title>
@@ -13,6 +13,7 @@ const TileBig = ({ title, content, demo, code, onClick }) => {
         Code:
         <Link href='{code}'> {code}</Link>
       </Code>
+      <Button onClick={setShowAll}>Back</Button>
     </TileContainer>
   );
 };

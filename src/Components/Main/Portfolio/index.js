@@ -11,7 +11,7 @@ const Portfolio = () => {
   const [showAll, setShowAll] = useState(true);
   const [tileIndex, setTileIndex] = useState(null);
   const handleOnClick = index => {
-    setShowAll(false);
+    setShowAll(!setShowAll);
     setTileIndex(index);
   };
 
@@ -50,6 +50,7 @@ const Portfolio = () => {
                 if (item.title === tileIndex) {
                   return (
                     <TileBig
+                      setShowAll={setShowAll}
                       key={item.title}
                       title={item.title}
                       content={item.contentLong}

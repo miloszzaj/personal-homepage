@@ -33,3 +33,10 @@ export const Code = styled.div`
 export const Link = styled.a`
   color: ${({ theme }) => theme.text.quaternary};
 `;
+
+export const Button = styled.button`
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  background-color: ${({ theme }) => theme.background.secondary};
+`;
