@@ -10,24 +10,25 @@ export const TileContainer = styled.div`
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
+  padding: 40px 120px;
 `;
 
 export const Title = styled.h1`
-  margin: 56px;
+  /* margin: 56px; */
   text-align: center;
   color: ${({ theme }) => theme.text.quaternary};
 `;
 export const Content = styled.div`
-  margin: auto 56px;
+  margin-top: 35px;
   text-align: justify;
 `;
 
 export const Demo = styled.div`
-  margin: auto 56px;
+  margin-top: 35px;
 `;
 
 export const Code = styled.div`
-  margin: auto 56px;
+  margin-top: 35px;
 `;
 
 export const Link = styled.a`
@@ -41,12 +42,17 @@ export const Button = styled.button`
   line-height: 140%;
   background-color: ${({ theme }) => theme.button.background};
   color: ${({ theme }) => theme.text.tertiary};
-
   padding: 12px 16px;
   width: 154px;
   height: 49px;
   padding: 12px 16px;
-  margin: 40px auto;
+  margin: 50px auto;
   border: 1px solid rgba(209, 213, 218, 0.3);
   border-radius: 4px;
+  transition: filter 1s, color 1s;
+
+  &:hover {
+    filter: opacity(80%);
+    color: ${({ theme }) => theme.color.quinary};
+  }
 `;

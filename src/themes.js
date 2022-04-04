@@ -1,5 +1,6 @@
 const colorNames = {
   white: '#FFFFFF',
+  black: '#000000',
   mercury: '#E5E5E5',
   mineShaft: '#252525',
   scienceBlue: '#0366D6',
@@ -15,6 +16,7 @@ export const lightTheme = {
     secondary: colorNames.scienceBlue,
     tertiary: colorNames.mercury,
     quaternary: colorNames.white,
+    quinary: colorNames.black,
   },
   background: {
     primary: colorNames.salago,

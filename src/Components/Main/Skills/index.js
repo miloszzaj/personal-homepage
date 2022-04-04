@@ -12,7 +12,7 @@ const skillListArray = [
   'Redux (Toolkit)',
   'React Hooks',
 ];
-const Skills = ({ title }) => {
+const Skills = () => {
   return skillListArray.map(skill => (
     <ListWrapper key={skill}>
       <ListItem>{skill}</ListItem>
