@@ -25,6 +25,7 @@ export const lightTheme = {
 
   button: {
     background: colorNames.scienceBlue,
+    backgroundHover: colorNames.staleGray,
     border: colorNames.mischka,
   },
   text: {
