@@ -1,9 +1,12 @@
-import { Divider, SkillsList, Title, Wrapper } from './styled';
+import { Divider, SkillsList, Title, ToolsIcon, Wrapper } from './styled';
 
-const Section = ({ title, children }) => {
+const Section = ({ title, children, icon }) => {
   return (
     <Wrapper>
-      <Title>{title}</Title>
+      <Title>
+        {title}
+        {icon}
+      </Title>
       <Divider />
       <SkillsList>{children}</SkillsList>
     </Wrapper>

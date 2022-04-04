@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Tools } from '@styled-icons/bootstrap/Tools';
+import { Rocket } from '@styled-icons/ionicons-outline/Rocket';
 
 export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.background.secondary};
@@ -44,4 +46,16 @@ export const ListItem = styled.li`
     font-size: 30px;
     color: ${({ theme }) => theme.color.secondary};
   }
+`;
+
+export const ToolsIcon = styled(Tools)`
+  color: ${({ theme }) => theme.color.secondary};
+  width: 30px;
+  margin-left: 15px;
+`;
+
+export const RocketIcon = styled(Rocket)`
+  color: ${({ theme }) => theme.color.secondary};
+  width: 35px;
+  margin-left: 15px;
 `;
