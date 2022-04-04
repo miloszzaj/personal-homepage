@@ -1,4 +1,4 @@
-import { Divider, SkillsList, Title, ToolsIcon, Wrapper } from './styled';
+import { Divider, SkillsList, Title, Wrapper } from './styled';
 
 const Section = ({ title, children, icon }) => {
   return (
