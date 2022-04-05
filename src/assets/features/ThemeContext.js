@@ -15,7 +15,9 @@ export function useUpdateTheme() {
 export const ThemeContextProvider = ({ children }) => {
   const [themeContext, setTheme] = useState('light');
   const themeToggler = () => {
-    themeContext === 'light' ? setTheme('dark') : setTheme('light');
+    setTimeout(() => {
+      themeContext === 'light' ? setTheme('dark') : setTheme('light');
+    }, 200);
   };
 
   console.log(themeContext);
