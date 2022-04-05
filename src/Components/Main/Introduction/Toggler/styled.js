@@ -1,6 +1,25 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const flash = keyframes`
+0% {
+  background-color: ${({ theme }) => theme.background.secondary};
+;
+
+}
+50% {
+  background-color: ${({ theme }) => theme.background.primary};
+
+;
+  }
+  75% {
+    background-color: ${({ theme }) => theme.background.secondary};
+
+  }
+`;
 
 export const Container = styled.div`
+  animation: ${flash} 5s infinite;
+
   color: ${({ theme }) => theme.text.primary};
   text-transform: uppercase;
   text-align: center;
@@ -89,4 +108,5 @@ export const Switch = styled.span`
   border: 0 solid #bbb;
   border-radius: 20px;
   transition: all 0.3s ease-in 0s;
+  animation: ${flash} 5s infinite;
 `;
