@@ -1,5 +1,6 @@
 import Section from '../Section';
 import { RocketIcon, ToolsIcon } from '../Section/styled';
+import Footer from './Footer';
 import Introduction from './Introduction';
 import Portfolio from './Portfolio';
 import Skills from './Skills';
@@ -17,6 +18,7 @@ const Main = () => {
         <ToLearn />
       </Section>
       <Portfolio />
+      <Footer />
     </Wrapper>
   );
 };
