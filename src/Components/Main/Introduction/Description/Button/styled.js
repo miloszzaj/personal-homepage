@@ -14,6 +14,10 @@ export const Content = styled.a`
   border-radius: 4px;
   background-color: ${({ theme }) => theme.button.background};
   text-decoration: none;
+  transition: 0.3s linear;
+  &:hover {
+    background-color: ${({ theme }) => theme.button.backgroundHover};
+  }
 `;
 
 export const Text = styled.div`
@@ -24,8 +28,6 @@ export const Text = styled.div`
   position: static;
   width: 82px;
   height: 25px;
-  left: 56px;
-  top: 12px;
   font-style: normal;
   font-weight: 600;
   font-size: 20.0584px;
