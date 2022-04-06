@@ -4,15 +4,19 @@ const TileBig = ({ title, content, technologies, demo, code, onClick, setShowAll
   return (
     <TileContainer onClick={onClick}>
       <Title>{title}</Title>
-      <Content>Description: {content}</Content>
-      <Content>Technologies used: {technologies}</Content>
+      <Content>
+        <strong>Description:</strong> {content}
+      </Content>
+      <Content>
+        <strong>Technologies used:</strong> {technologies}
+      </Content>
       <Demo>
-        Demo:
-        <Link href='{demo}'> {demo}</Link>
+        <strong> Demo:</strong>
+        <Link href='{demo}'> Preview</Link>
       </Demo>
       <Code>
-        Code:
-        <Link href='{code}'> {code}</Link>
+        <strong> Code:</strong>
+        <Link href='{code}'> Repository</Link>
       </Code>
       <Button onClick={setShowAll}>Back</Button>
     </TileContainer>

@@ -25,14 +25,19 @@ export const Content = styled.div`
 
 export const Demo = styled.div`
   margin-top: 35px;
+  text-align: center;
+  font-size: 1.5rem;
 `;
 
 export const Code = styled.div`
   margin-top: 35px;
+  text-align: center;
+  font-size: 1.5rem;
 `;
 
 export const Link = styled.a`
   color: ${({ theme }) => theme.text.quaternary};
+  text-decoration: none;
 `;
 
 export const Button = styled.button`

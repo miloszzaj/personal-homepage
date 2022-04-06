@@ -1,4 +1,4 @@
-import { Code, Content, Demo, Link, TileContainer, Title } from './styled';
+import { Button, Code, Content, Demo, Link, TileContainer, Title } from './styled';
 
 const Tile = ({ title, content, demo, code, onClick }) => {
   return (
@@ -6,12 +6,12 @@ const Tile = ({ title, content, demo, code, onClick }) => {
       <Title>{title}</Title>
       <Content>{content}</Content>
       <Demo>
-        Demo:
-        <Link href='{demo}'> {demo}</Link>
+        <strong> Demo:</strong> <Link href='{demo}'>Preview </Link>
       </Demo>
       <Code>
-        Code:
-        <Link href='{code}'> {code}</Link>
+        <strong> Code:</strong>
+        <Link href='{code}'>Repository </Link>
+        <Button>more info</Button>
       </Code>
     </TileContainer>
   );

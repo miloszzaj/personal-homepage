@@ -22,13 +22,32 @@ export const Content = styled.div`
 `;
 
 export const Demo = styled.div`
-  margin: auto 56px;
+  margin: 10px 56px;
 `;
 
 export const Code = styled.div`
-  margin: auto 56px;
+  margin: 10px 56px;
 `;
 
 export const Link = styled.a`
+  text-decoration: none;
   color: ${({ theme }) => theme.text.quaternary};
+  font-weight: 600;
+  margin-left: 30px;
+`;
+
+export const Button = styled.button`
+  float: right;
+  height: 30px;
+  padding: 0 16px;
+
+  color: ${({ theme }) => theme.text.tertiary};
+
+  background-color: ${({ theme }) => theme.button.background};
+  border: 1px solid rgba(209, 213, 218, 0.3);
+  border-radius: 4px;
+  transition: 0.3s linear;
+  &:hover {
+    background-color: ${({ theme }) => theme.button.backgroundHover};
+  }
 `;
