@@ -16,7 +16,7 @@ export const projects = [
     content:
       'Currency Converter converts amounts from any currency to PLN. You can choose one of any currencies available in European Central Bank.',
     contentLong:
-      '      Currency Converter is application that provides for the easy conversion of currency values based on present-day exchange rates. You can convert amounts from any currency to PLN. You can choose one of any currencies available in European Central Bank Please, enter a value of currency you would like to be converted into PLN currency. Currency conversion can be helped for tourists who travel abroad, to businesses who do business overseas or are involved in imports and exports',
+      'Currency Converter is application that provides for the easy conversion of currency values based on present-day exchange rates. You can convert amounts from any currency to PLN. You can choose one of any currencies available in European Central Bank Please, enter a value of currency you would like to be converted into PLN currency. Currency conversion can be helped for tourists who travel abroad, to businesses who do business overseas or are involved in imports and exports',
     technologies:
       '     This project was bootstrapped with Create React App. ES6+ React.js JavaScript Webpack Babel Custom hooks Styled components Local storage The currency data comes from the European Central Bank and its provider is https://exchangerate.host.',
     demo: 'https://miloszzaj.github.io/currency-converter-react/',

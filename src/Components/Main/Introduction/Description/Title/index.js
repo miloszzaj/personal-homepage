@@ -1,7 +1,14 @@
-import { Content } from './styled';
+import styled from 'styled-components';
 
-const Title = () => {
-  return <Content>Miłosz Zajączkowski</Content>;
-};
+export const Title = styled.h1`
+  /* width: 415px; */
+  height: 46px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+  color: ${({ theme }) => theme.text.primary};
+`;
 
 export default Title;

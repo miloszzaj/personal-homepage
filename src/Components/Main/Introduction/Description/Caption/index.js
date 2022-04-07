@@ -1,12 +1,13 @@
-import { Content } from './styled';
+import styled from 'styled-components';
 
-const Caption = () => {
-  return (
-    <Content>
-      AMkmij eidcj wijv r vjwijv oiw voiw vjwivjoiwfoiv nw jfvi hwf oivhw iofhvo iwhoi ciwnc cniwj
-      dc wodcj wm jvd omc wdlc owd comw docwo dcmwmd cwm dlc wdc ow
-    </Content>
-  );
-};
+export const Caption = styled.div`
+  width: 633px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.05em;
+  color: ${({ theme }) => theme.text.secondary};
+`;
 
 export default Caption;
