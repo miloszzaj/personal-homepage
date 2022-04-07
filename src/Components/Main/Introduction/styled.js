@@ -15,5 +15,7 @@ export const Image = styled.img`
   width: 398px;
   height: 398px;
   border-radius: 50%;
-  order: 2;
+  @media ${device.tablet} {
+    order: -1;
+  }
 `;

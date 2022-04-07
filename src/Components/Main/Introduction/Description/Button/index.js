@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../../../assets/breakpoints';
 
 export const Button = styled.button`
   display: flex;

@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { device } from '../../../../assets/breakpoints';
 
 const flash = keyframes`
 0% {
@@ -36,6 +37,15 @@ export const Container = styled.div`
   height: 16px;
   left: 0px;
   top: 5px;
+  @media ${device.tablet} {
+    position: relative;
+    top: -700px;
+  }
+  @media ${device.mobile} {
+    position: relative;
+    top: -700px;
+    left: 60vw;
+  }
 `;
 export const Wrapper = styled.div`
   position: relative;
