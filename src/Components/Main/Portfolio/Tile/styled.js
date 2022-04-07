@@ -12,8 +12,8 @@ export const TileContainer = styled.div`
   font-size: 18px;
   line-height: 140%;
   @media ${device.tabletL} {
-    width: 100vw;
-    margin: 0;
+    width: 90%;
+    margin: 0 16px;
   }
   @media ${device.mobile} {
     font-size: 14px;
@@ -56,20 +56,26 @@ export const Link = styled.a`
   color: ${({ theme }) => theme.text.quaternary};
   font-weight: 600;
   margin-left: 30px;
+  @media ${device.mobile} {
+    margin-left: 5px;
+  }
 `;
 
 export const Button = styled.button`
   float: right;
   height: 30px;
   padding: 0 16px;
-
   color: ${({ theme }) => theme.text.tertiary};
-
   background-color: ${({ theme }) => theme.button.background};
   border: 1px solid rgba(209, 213, 218, 0.3);
   border-radius: 4px;
   transition: 0.3s linear;
   &:hover {
     background-color: ${({ theme }) => theme.button.backgroundHover};
+  }
+  @media ${device.mobile} {
+    height: fit-content;
+    font-size: 14px;
+    padding: 0 10px;
   }
 `;
