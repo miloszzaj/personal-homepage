@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { device } from '../../../../assets/breakpoints';
 
 export const TileContainer = styled.div`
   width: 592px;
@@ -10,23 +11,44 @@ export const TileContainer = styled.div`
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
+  @media ${device.tabletL} {
+    width: 100vw;
+    margin: 0;
+  }
+  @media ${device.mobile} {
+    font-size: 14px;
+    height: 230px;
+  }
 `;
 
 export const Title = styled.h1`
   margin: 56px auto 24px 56px;
   color: ${({ theme }) => theme.text.quaternary};
+  @media ${device.mobile} {
+    font-size: 16px;
+    margin: 24px auto 16px 24px;
+  }
 `;
 export const Content = styled.div`
   margin: auto 56px;
   text-align: justify;
+  @media ${device.mobile} {
+    margin: 0 24px 16px;
+  }
 `;
 
 export const Demo = styled.div`
   margin: 10px 56px;
+  @media ${device.mobile} {
+    margin: 0 24px 16px;
+  }
 `;
 
 export const Code = styled.div`
   margin: 10px 56px;
+  @media ${device.mobile} {
+    margin: 0 24px 16px;
+  }
 `;
 
 export const Link = styled.a`

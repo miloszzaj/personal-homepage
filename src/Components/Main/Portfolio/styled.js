@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { device } from '../../../assets/breakpoints';
+
 export const Wrapper = styled.div`
   margin: auto;
 `;
@@ -41,4 +43,11 @@ export const Tiles = styled.div`
   grid-template-columns: 1fr 1fr;
   column-gap: 32px;
   row-gap: 32px;
+  @media ${device.tabletL} {
+    width: 100vw;
+    margin: 0;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 16px;
+  }
 `;
