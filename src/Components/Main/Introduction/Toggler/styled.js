@@ -37,7 +37,7 @@ export const Container = styled.div`
   height: 16px;
   left: 0px;
   top: 5px;
-  @media ${device.tablet} {
+  @media ${device.tabletL} {
     position: relative;
     top: -700px;
   }
