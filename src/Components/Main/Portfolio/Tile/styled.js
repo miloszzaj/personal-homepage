@@ -18,6 +18,7 @@ export const TileContainer = styled.div`
   @media ${device.mobile} {
     font-size: 14px;
     height: 230px;
+    line-height: 110%;
   }
 `;
 
